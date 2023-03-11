@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>TUNIjobs</title>
+    <link rel="icon" type="image/png" href="tj2.jpg">
+</head>
+
+
+
+
+
+<style>
+    #popup-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #popup {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+    #close-popup-btn {
+        margin-top: 80px;
+        margin-bottom: 20px;
+        color: #ff7200;
+    }
+
+    .box {
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        position: relative;
+        animation: fadeIn 1s;
+        color: #ff7200;
+    }
+
+
+
+    #open-popup-btn {
+
+        width: 180px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        transition: 0.4s ease;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btn2 a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .btn2 {
+        background-color: #000;
+        color: white;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: transform 0.2s;
+    }
+
+    .btn2:hover {
+        transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+<body>
+    <div class="main " id="home">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"> TUNIjobs</h2>
+            </div>
+            <div class="menu">
+                <ul>
+
+                    <li><a href="home.html">ACCEUIL</a></li>
+                    <li><a href="emplois.html">EMPLOIS</a></li>
+                    <li><a href="stage.html">STAGES</a></li>
+                    <li><a href="contact.html">CONSEILS </a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>TUNI<span>jobs</span> </h1>
+            <p class="par">
+                Les Entreprises recherchent les bons Candidats,<br>
+                Trouver votre future stage ou emploi à tunis...
+            </p>
+
+            <!-- <button class="cn"><a href="se.html">JOIN US</a></button> -->
+
+
+            <button id="open-popup-btn">JOIN US</button>
+
+            <div id="popup-container">
+                <div id="popup">
+
+                    <div class="box">
+                        <h2>Welcome to TUNIjobs</h2>
+                        <p>Please select a page:</p>
+                        <div class="buttons">
+                            <button class="btn2" id="page1-btn2"><a href="emplois.html">emplois</button>
+                            <button class="btn2" id="page2-btn2"><a href="stage.html">stages</button>
+                        </div>
+                        <a href="#" id="close-popup-btn">Close</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email " required>
+
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+
+                <button type="button" class="btnn"><a href="contact.html">login</a></button>
+
+                <!-- <button id="open-popup-btn" >Login</button>
+
+                <div id="popup-container">
+                    <div id="popup">
+
+                        <div class="box">
+                            <h2>Welcome to TUNIjobs</h2>
+                            <p>Please select a page:</p>
+                            <div class="buttons">
+                                <button class="btn2" id="page1-btn2"><a href="emplois.html">emplois</button>
+                                <button class="btn2" id="page2-btn2"><a href="stage.html">stages</button>
+                            </div>
+                            <a href="#" id="close-popup-btn">Close</a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <p class="link">Don't have an account<br>
+                    <a href="signup.html">Sign up </a> here</a>
+                </p>
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+
+    <footer class="footer1"> TUNIjobs 2023 &copy;
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+
+
+
+<script>
+
+    const openPopupBtn = document.getElementById('open-popup-btn');
+    const closePopupBtn = document.getElementById('close-popup-btn');
+    const popupContainer = document.getElementById('popup-container');
+
+    openPopupBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        popupContainer.style.display = 'flex';
+    });
+
+    closePopupBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        popupContainer.style.display = 'none';
+    });
+
+    popupContainer.addEventListener('click', function (event) {
+        if (event.target === popupContainer) {
+            popupContainer.style.display = 'none';
+        }
+    });
+    const form = document.querySelector('form');
+    const emailInput = form.querySelector('#email');
+    const passwordInput = form.querySelector('#password');
+    form.addEventListener('submit', function (event) {
+        if (!emailInput.value || !passwordInput.value) {
+            alert('Please enter your email and password.');
+            event.preventDefault();
+        }
+    });
+</script>
+
+</html>
